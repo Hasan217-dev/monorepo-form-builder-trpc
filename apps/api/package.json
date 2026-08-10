@@ -1,19 +1,20 @@
 {
   "name": "@/monorepo-form-builder-trpc/api",
   "main": "./dist/index.js",
-  "private" : "true",
+  "private": "true",
   "scripts": {
-     "dev" : "tsx watch src/index.ts",
-     "build" : "tsc" ,
-     "start": "node dist/index.js"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
-
   "type": "module",
   "dependencies": {
-    "@monorepo-form-builder-trpc/utils" : "workspace:*" , 
+    "@monorepo-form-builder-trpc/utils": "workspace:*",
+    "cors": "^2.8.6",
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.2.0",
     "tsx": "^4.23.11",
