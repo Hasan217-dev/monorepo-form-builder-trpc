@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@monorepo-form-builder-trpc/utils": "workspace:*",
+     "@monorepo-form-builder-trpc/trpc" : "workspace:*", 
     "@tanstack/react-query": "^5.101.4",
     "@trpc/client": "^11.18.0",
     "@trpc/react-query": "^11.18.0",

@@ -247,6 +247,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@monorepo-form-builder-trpc/trpc':
+        specifier: workspace:*
+        version: link:../../packages/trpc
       '@monorepo-form-builder-trpc/utils':
         specifier: workspace:*
         version: link:../../packages/utils
