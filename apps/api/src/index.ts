@@ -2,8 +2,8 @@
 import express from "express"
 import cors from "cors"
 
-import {createExpressMiddleware} from "@trpc/server/adapters/express"
-import {appRouter} from "@monorepo-form-builder-trpc/trpc"
+import { createExpressMiddleware } from "@trpc/server/adapters/express"
+import { appRouter } from "@monorepo-form-builder-trpc/trpc"
 
 // import {createUserSchema} from "@monorepo-form-builder-trpc/utils"
 
@@ -15,7 +15,7 @@ const PORT = 5000
 
 app.use("/trpc" , createExpressMiddleware({
     router : appRouter
-}))
+}));
 
 
 // app.get("/" , (req , res)=>{
